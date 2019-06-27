@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='Swift Codable Basic'/>
+        <page name='Swift Codable manual encode decode'/>
+        <page name='Swift Codable coding key'/>
+        <page name='Swift Codable key decoding strategy'/>
+        <page name='Swift Codable date decoding strategy'/>
+        <page name='Swift Codable array in nested container'/>
+    </pages>
+</playground>
