@@ -7,10 +7,14 @@
 - Encodable: chuyển instace sang string, bytes... (encoding/serialization)
 
 ## Table of contents
-- Swift Codable basic
-- Swift Codable manual encode decode
+- [Swift Codable basic](#Swift-Codable-basic)
+- [Swift Codable manual encode decode](#Swift-Codable-manual-encode-decode)
+- [Swift Codable coding key](#Swift-Codable-coding-key)
+- [Swift Codable key decoding strategy](#Swift-Codable-key-decoding-strategy)
+- [Swift Codable date decoding strategy](#Swift-Codable-date-decoding-strategy)
+- [Swift Codable nested unkeyed container](#Swift-Codable-nested-unkeyed-container)
 
-## Swift Cobale basic
+## Swift Codable basic
 Chúng ta sẽ đi vào ví dụ đầu tiên của Swift Codable, mục tiêu sẽ là convert đoạn JSON sau sang Swift object (struct)
 
 ```json
@@ -23,7 +27,7 @@ Chúng ta sẽ đi vào ví dụ đầu tiên của Swift Codable, mục tiêu s
 
 **Cách làm:**
 
-Đối với các JSON có dạng đơn giản thế này, công việc của chúng ta chỉ là *define Swift struct conform to Codable protocol* cho chính xác, sau đó dùng *JSONDecoder()* để decode về instance là được. </br>
+Đối với các JSON có dạng đơn giản thế này, công việc của chúng ta chỉ là *define Swift struct conform to Codable protocol* cho chính xác, sau đó dùng *JSONDecoder()* để decode về instance là được.
 Note: Nếu không cần phải chuyển ngược lại thành string/bytes (không cần encode) thì chỉ cần conform protocol Decodable là đủ.
 
 **Implementation:**
@@ -70,7 +74,7 @@ let personEntity = try? decoder.decode([Person].self, from: data)
 ```
 Ở đây ta đã định nghĩa được data decode ra sẽ là array của struct Person.
 
-## Swift Cobale manual encode decode
+## Swift Codable manual encode decode
 Trong một vài trường hợp, data trả về mà chúng ta cần có thể nằm trong một key khác như dưới:
 ```json
 {
@@ -160,7 +164,7 @@ Note: Đối với việc Encode thì cũng làm tương tự, tham khảo sourc
 
 Với cách làm này, thì khi gọi đến properties của struct, đơn giản ta chỉ cần `personEntity.name` là đủ.
 
-## Swift Cobale coding key
+## Swift Codable coding key
 Trong đa số các trường hợp thì client sẽ sử dụng json format mà server đã định sẵn, do đó có thể gặp các kiểu json có format như sau:
 ```json
 {
@@ -274,7 +278,7 @@ decoder.dateDecodingStrategy = .formatted(dateFormatter())
 ```
 Với ví dụ này, thì chúng ta có thể tự define date formatter và sử dụng cho `dateDecodingStrategy` của JSONDecoder
 
-## ## Swift Codable nested unkeyed container
+## Swift Codable nested unkeyed container
 
 ```json
 {
