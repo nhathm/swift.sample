@@ -9,7 +9,7 @@
 ## Table of contents
 - [Swift Codable basic](#Swift-Codable-basic)
 - [Swift Codable manual encode decode](#Swift-Codable-manual-encode-decode)
-- [Swift Cobable coding key](#Swift-Codable-coding-key)
+- [Swift Codable coding key](#Swift-Codable-coding-key)
 - [Swift Codable key decoding strategy](#Swift-Codable-key-decoding-strategy)
 - [Swift Codable date decoding strategy](#Swift-Codable-date-decoding-strategy)
 - [Swift Codable nested unkeyed container](#Swift-Codable-nested-unkeyed-container)
