@@ -316,4 +316,4 @@ extension ListPerson: Decodable {
 }
 ```
 
-Sample playground: [Swift_Codable.playground](Codable/Swift_Codable.playground)
+Sample playground: [Swift_Codable.playground](Swift_Codable.playground)
