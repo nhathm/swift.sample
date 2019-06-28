@@ -316,4 +316,4 @@ extension ListPerson: Decodable {
 }
 ```
 
-Sample playground: [Swift_Codable.playground](Swift_Codable.playground)
+Sample playground: [Swift_Codable.playground](https://github.com/RioV/swift.sample.riov/tree/master/Codable/Swift_Codable.playground)
