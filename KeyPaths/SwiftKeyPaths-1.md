@@ -6,7 +6,7 @@
 - [KeyPaths basic](#keyPaths-basic)
 - [KeyPaths store uninvoked reference to property](#keyPaths-store-uninvoked-reference-to-property)
 - [KeyPaths as parameter](#keypaths-as-parameter)
-- [Sort, filter...using KeyPaths](#sort,-filter...using-keyPaths)
+- [Sort, filter...using KeyPaths](#sorted-filterusing-keypaths)
 
 ## KeyPaths basic
 - KeyPaths là cách để truy cập đến property chứ không phải truy cập đến giá trị của property.
