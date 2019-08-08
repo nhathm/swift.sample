@@ -11,7 +11,7 @@
 ## KeyPaths basic
 - KeyPaths là cách để truy cập đến property chứ không phải truy cập đến giá trị của property.
 - Khi định nghĩa KeyPaths thì ta hoàn toàn có thể xác định/định nghĩa được kiểu biến của KeyPaths
-- Ở Objective C cũng đã có khái niệm KeyPaths, tuy nhiên KeyPaths của Objective C chỉ là string, còn KetPaths của Swift thì được định nghĩa rõ ràng kiểu dữ liệu
+- Ở Objective C cũng đã có khái niệm KeyPaths, tuy nhiên KeyPaths của Objective C chỉ là string, còn KeyPaths của Swift thì được định nghĩa rõ ràng kiểu dữ liệu
 
 ## KeyPaths store uninvoked reference to property
 Cùng check đoạn code phía dưới
