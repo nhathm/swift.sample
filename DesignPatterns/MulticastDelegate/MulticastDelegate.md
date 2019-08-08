@@ -141,4 +141,4 @@ Lúc này, ta thấy rằng chỉ có object của class `ReceivedDelegate1` là
 
 Đề làm được điều này thì ta đã sử dụng NSHashTable.weakObjects() để lưu weak reference đến các delegate được gán vào biến `delegates` của helper `MulticastDelegate`. Do đó đảm bảo được việc keep weak reference của class helper, nhằm tránh memory leak.
 
-Ví dụ xem file: [MulticastDelegate.playground](https://github.com/nhathm/swift.sample/tree/master/Design Patterns/MulticastDelegate.playground)
+Ví dụ xem file: [MulticastDelegate.playground](https://github.com/nhathm/swift.sample/tree/master/DesignPatterns/MulticastDelegate.playground)
