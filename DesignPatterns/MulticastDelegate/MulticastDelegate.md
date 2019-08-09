@@ -2,10 +2,10 @@
 
 ## Khái niệm
 
-- Chúng ta đều biết rằng delegate là mối quan hệ 1 - 1 giữa 2 objects, trong đó 1 ọbject sẽ gửi data/event và object còn lại sẽ nhận data hoặc thực thi event
-- Multicast delegate, về cơ bản chỉ là mối quan hệ 1 - n, trong đó, 1 object sẽ gửi dataevent đi, và có n class đón nhận data, event đó.
+- Chúng ta đều biết rằng delegate là mối quan hệ 1 - 1 giữa 2 objects, trong đó 1 object sẽ gửi data/event và object còn lại sẽ nhận data hoặc thực thi event
+- Multicast delegate, về cơ bản chỉ là mối quan hệ 1 - n, trong đó, 1 object sẽ gửi data/event đi, và có n class đón nhận data, event đó.
 
-## Ứng dụng của multicase delegate, lúc nào thì dùng?
+## Ứng dụng của multicast delegate, lúc nào thì dùng?
 
 - Dùng multicast delegate khi mà bạn muốn xây dựng một mô hình delegate có mối quan hệ 1 - nhiều.
 - Ví dụ: bạn có 1 class chuyên lấy thông tin data và các logic liên quan, và bạn muốn mỗi khi data của class được update và muốn implement các logic tương ứng của class này trên nhiều view/view controller khác nhau. Thì multicast delegate có thể dùng để xử lý bài toán này.
@@ -13,7 +13,7 @@
 ## So sánh với observer và notification
 
 - Tại sao không dùng observer: chủ yếu chúng ta dùng obverver để theo dõi data hoặc event nào đó xảy ra, và thực hiện logic sau khi nó đã xảy ra. Còn nếu dùng delegate, chúng ta còn có thể xử lý data hoặc event, hay nói cách khác, chúng ta có thể quyết định xem có cho phép event đó xảy ra hay không, ví dụ như các delegate của Table view như tableView:willSelectRowAtIndexPath:
-- Tại sao không dùng Notification thay vì multicast delegate? Về cơ bản, notification là thông tin một chiều từ 1 object gửi sang nhiều object nhận, chứ không thể có tương tác ngược lại. Ngoài ra, việc gửi data từ object gửi sang các object nhận thông qua userInfo thực sự là một điểm trừ rất lớn của Notifiction. Hơn nữa, việc quản lý Notification sẽ tốn công sức hơn là delegate, và chúng ta khá là khó khăn để nhìn ra mối quan hệ giữa object gửi và nhận khi dùng Notification.
+- Tại sao không dùng Notification thay vì multicast delegate? Về cơ bản, Notification là thông tin một chiều từ 1 object gửi sang nhiều object nhận, chứ không thể có tương tác ngược lại. Ngoài ra, việc gửi data từ object gửi sang các object nhận thông qua userInfo thực sự là một điểm trừ rất lớn của Notification. Hơn nữa, việc quản lý Notification sẽ tốn công sức hơn là delegate, và chúng ta khá là khó khăn để nhìn ra mối quan hệ giữa object gửi và nhận khi dùng Notification.
 
 ## Implementation
 
