@@ -227,5 +227,5 @@ function gstPlugin_test() {
 
 - Build project native đã được generate ra và kiểm tra kết quả
 
-| ![iOS Result](resources/ios_sample.png)  | ![Android Result](resources/android_sample.png) |
+| ![iOS Result](resources/ios_sample.PNG)  | ![Android Result](resources/android_sample.png) |
 | ------------- | ------------- |
