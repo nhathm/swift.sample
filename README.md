@@ -11,4 +11,4 @@
         - [UITextView placeholder](UIKit/UITextView/TextViewPlaceHolder.md)
 
 - [Cordova plugin sample](CordovaPluginSample/)
-    - [Cordova plugin guildline](UIKit/CordovaPluginGuildline.md)        
+    - [Cordova plugin guildline](CordovaPluginSample/CordovaPluginGuildline.md)        
